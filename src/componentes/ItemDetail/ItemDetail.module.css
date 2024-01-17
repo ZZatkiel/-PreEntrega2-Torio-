@@ -1,0 +1,42 @@
+.CardGeneral{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.CardItem {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+  }
+  
+.Header {
+    text-align: center;
+}
+  
+.img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+  
+.Info {
+    margin: 5px 0;
+}
+  
+.ItemFooter {
+    margin-top: auto;
+    text-align: center;
+}
+  
+.Option {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}

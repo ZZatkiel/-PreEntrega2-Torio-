@@ -1,0 +1,19 @@
+.navbar {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #23292c;
+}
+  
+.navbar h3 {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #9c9c9c;
+}
+  
+.navbar div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 20px;
+}

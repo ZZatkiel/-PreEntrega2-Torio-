@@ -1,0 +1,50 @@
+.CardGeneral{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.CardItem {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+  }
+  
+.Header {
+    text-align: center;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+  
+.ItemFooter {
+    background-color: #000000;
+    height: 60px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+
+    &:hover{
+        background-color: gray;
+    }
+}
+
+.option{
+    color: rgb(255, 255, 255);
+
+    &:hover{
+        color: white;
+    }
+
+}
