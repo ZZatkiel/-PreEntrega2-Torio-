@@ -28,7 +28,7 @@ const products =
     description:'Descripcion de Iphone 14'
 },
 { 
-    id: '1', 
+    id: '4', 
     name: 'Tablet velocity', 
     price: 152820, 
     category: 'tablet', 
@@ -38,7 +38,7 @@ const products =
 
 },
 {
-    id: '2', 
+    id: '5', 
     name: 'Tablet Furius', 
     price: 122573, 
     category: 'tablet', 
@@ -47,7 +47,7 @@ const products =
     description:'Descripcion de Iphone 13'
 },
 {
-    id: '3', 
+    id: '6', 
     name: 'Tablet HD', 
     price: 312500, 
     category: 'tablet', 
@@ -56,7 +56,7 @@ const products =
     description:'Descripcion de Iphone 14'
 },
 { 
-    id: '1', 
+    id: '7', 
     name: 'Asmodeus NoteBook', 
     price: 651000, 
     category: 'notebook', 
@@ -66,7 +66,7 @@ const products =
 
 },
 {
-    id: '2', 
+    id: '8', 
     name: 'NoteBook Dragon', 
     price: 842000, 
     category: 'notebook', 
@@ -75,7 +75,7 @@ const products =
     description:'Descripcion de Iphone 13'
 },
 {
-    id: '2', 
+    id: '9', 
     name: 'NoteBook Wordspike', 
     price: 352000, 
     category: 'notebook', 
@@ -96,18 +96,18 @@ export const getProducts = () => {
 }
 
 
+
 export const getProductsById = (productId) => {
+
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            const product = products.find(prod => prod.id === productId);
-            if (product) {
-                resolve([product]);
-            } else {
-                reject(new Error('Producto no encontrado'));
-            }
+            resolve(products.find((prod) => prod.id === productId));
         }, 1000);
     });
-}
+
+};
+
+
 
 
 export const getProductsByCategory = (productCategory) => {
